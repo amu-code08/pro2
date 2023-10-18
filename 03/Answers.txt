@@ -1,0 +1,20 @@
+3-10実行結果：
+
+count = 0
+k: true
+e: true
+i: true
+o: true
+count = 4
+k: true
+e: true
+i: false
+o: true
+count = 3
+k: true
+e: true
+i: false
+o: true
+a: true
+x: false
+count = 4

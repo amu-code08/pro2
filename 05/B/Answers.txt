@@ -1,0 +1,24 @@
+実行結果；
+
+Made a new Car instance
+Made a new Car instance
+Set number to 123 and fuel efficiency to 8.0
+30.0 liters of gas was added
+Car now has 30.0 liters of gas
+Set number to 789 and fuel efficiency to 7.5
+40.0 liters of gas was added
+Car now has 40.0 liters of gas
+
+Truck1's current status
+0th goods in the cargo is: type = table, num = 200, Unit Price = 400, DestinationYokohama
+1th goods in the cargo is: type = chair, num = 350, Unit Price = 350, DestinationUeno
+2th goods in the cargo is: type = sofa, num = 1000, Unit Price = 100, DestinationShinjuku
+Total cargo value is 302500
+Total shipping cost is 9000
+
+Truck2's current status
+0th goods in the cargo is: type = sofa, num = 200, Unit Price = 200, DestinationOsaka
+1th goods in the cargo is: type = desk, num = 400, Unit Price = 100, DestinationKyoto
+Total cargo value is 80000
+Total shipping cost is 8000
+THE END

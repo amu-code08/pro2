@@ -1,0 +1,19 @@
+7-2
+a) class Pointで定義されているint getX()はpackage exercise内での呼び出ししかできないがA1のクラスはpackage questionのクラスであるので、getXの呼び出しはできないはずである。
+b) yはprivateで定義されているので同じクラス内でしかアクセスできず、子クラスのPoint3Dのvoid moveYのy += dy;はアクセス制限の違反である。
+c) class Pointで定義されているint getX()はpackage exercise内での呼び出ししかできないがA1のクラスはpackage questionのクラスであるので、getXの呼び出しはできないはずである。
+
+7-3
+1 a) Object
+  b) 主流のアウトプット先である。これは一般的には画面表示か指定された出力先を指す。Console.charsetまたはstdout.encodingにしたがって文字からバイトへ変換される。
+  c) なし、boolean, char, char[], double, float, int, long, java.lang.Object, java.lang.Stringの型を取ることができる。
+
+2 a) Doubleはオブジェクトであり、doubleは基本型のデータ型である。Doubleはdoubleをラップして、それをStringに変えるなどのメソッドを持つクラスである。
+  b) Doubleを除くNumberクラスのサブクラスは、AtomicInteger, AtomicLong, BigDecimal, BigInteger, Byte, DoubleAccumulator, DoubleAdder, Float, Integer, Long, LongAccumulator, LongAdder, Short
+
+3 java.util.Random
+
+4 String aNewString =  aString.substring(2,7);
+
+7-4
+中身がStringと決まっているArrayListにnew Color()を入れることはできない。

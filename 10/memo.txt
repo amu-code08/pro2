@@ -1,0 +1,28 @@
+public class A {
+    int var1 = 3; 
+    static int var2=4;
+
+    public void printVar1(){
+        System.out.println("Var1B:" + var1);
+    }
+
+    public void printVar2() {
+        System.out.println("Var2B: " + var2);
+    }
+
+    public void changeVar1(int x){
+        var1 = x;
+    }
+
+    public void changeVar2(int x){
+        var2 = x;
+    }
+
+    public void changeX(int val)`{
+        val = 1;
+    }
+
+    public void changeVar3(B x){
+        x.var3 = 5;
+    }
+}

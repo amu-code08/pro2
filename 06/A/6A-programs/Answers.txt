@@ -1,0 +1,28 @@
+6-1
+実行結果：
+a) true
+b) false
+c) true
+d) true
+e) true
+f) true
+class Bはclass Aを継承している。そのため、class BのオブジェクトはすべてクラスＡのインスタンスであるといえる。もちろんclass Aはclass A, class Bは class Bのオブジェクトでもある。
+またclass Aはextendsを使って定義されているわけではないので、スーパークラスはObjectクラスになっている。そのため、class A, B両方がObject classのインスタンスになっている。
+
+6-2
+class Aでfinalで定義されているメソッドをclass Bでoverideしようとしているのでエラーが起こる。
+
+6-2
+W is called
+Y is called
+Z is called
+X is called
+I is shown
+Z is called
+Z is shown
+
+まずW, X, Y, Zオブジェクトが作られる。w, y, zにはtestClass関数が呼ばれれる。これはW classを仮引数に取り、
+w.showMessage()という関数を呼び出すものである。W、Y、Zはclassにその関数を持ち is calledのような文がプリントされる。
+class XのobjectにtestInterface()を呼び出すと、showMessageとshowが呼び出される。ここでXではshowmessageが定義されているので、
+X is calledのような文がプリントされる。しかしshowに関しては存在しないので、implement先のIのshowが呼び出される。Zに関してもそのクラスに必要な関数が両方
+定義されているのでこのような文がプリントされた。

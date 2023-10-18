@@ -1,0 +1,48 @@
+8-1
+Throw1.javaの実行結果
+Fruit = apple
+Let's eat!
+Exception in thread "main" java.lang.Exception: BANANA!
+        at Throw1.methodA(Throw1.java:5)
+        at Throw1.main(Throw1.java:12)
+
+関数で定義されている通りにfruit.equals("banana")のときはBANANA! をthrowすることが決まっているので、appleは正常に実行されたがbananaをmethodAの引数に入れたときはexceptionが投げられた。
+
+Throw2.javaの実行結果
+Fruit = apple
+Let's eat!
+BANANA!
+The actual end
+実行のmethodAの部分でexceptionが投げられたので、その下のcatch文でexceptionのメッセージ、BANANA!をキャッチしてプリントする。そして最後にThe actual endがprintされている。この時エラーが起こった後のコードSystem.out.println("The end");はスキップされた。
+
+
+Throw3.javaの実行結果
+The finally fruit is apple
+Fruit = apple
+Let's eat!
+The finally fruit is banana
+BANANA!
+The actual end
+
+finally文はtry文の中でエラーが起こっても必ず実行されるので、appleとbanana両方で出力された。しかしFruit = fruitの部分はエラーが起こると実行されず、bananaの場合はcatch文が実行されたのでBANANA!と出力された。そのあとのThe endha
+エラーが起こったため実行されず、The actual endのみが出力される結果になった。
+
+8－2
+実行結果；
+Before a
+Before b
+Before c
+banana
+c: finally
+b: finally
+a: java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3
+a: finally
+After a
+main: finally
+
+実行部分では、listにappleを入れ、a()を実行する。a()ではlistにgrapeを入れb()を実行する。b()ではlistにbananaを入れc()を実行する。それぞれにはcatchとfinally文がついている。
+まずBefore a, b, cと正常に実行され、c()のprintln文でbananaと出力される。しかし次のSystem.out.println(list.get(3));でIndexOutOfBoundsExceptionが起きる。だがまずはfinally文がそれぞれc(),b()で実行され、a()のキャッチ文でこのエラーはキャッチされる。そしてa()のfinallyも実行され、mainのfinallyも実行される。今回はc()でエクセプションが起こったが、これはもともと呼び出した関数に例外を処理させるためこのようになった。
+
+8－3
+Exception eですでにキャッチしているのに、NumnberFormatExceptionでそのあとからキャッチしようとしているのでコンパイルできない。
+ExceptionはすでにNumberFormatExceptionを含んでいる。

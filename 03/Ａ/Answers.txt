@@ -1,0 +1,23 @@
+3-1
+インスタンスを作成していないので、p= new MyPoint(); をp.setPoint(4, 21);の前に追加しないといけない。
+
+3-2 
+yがprivate variableなので、p.yで外部からアクセスできない。
+
+3-3
+配列は宣言しただけでは使えない。値を代入する前に、int[] a = new int[10];　などと実際に作ってあげないといけない。
+
+3-4
+長さが２０の配列は、indexとしては0-19までしか持っていないため、a[20]は存在しない。
+
+3-5
+String[] fruits = new String[] {"apple", "grape", "orange"};
+
+3-6
+Hello!-4
+Hello!-421
+Hello!17
+
+左からconcatされていくので、一行目はHello!と-4がconcatされる。
+同様に二行目はHello!-4ができた後、21をconcatすることで、Hello!-421となる。
+３行目は、かっこがついているので計算が先に行われ、その答えの１７がstringにconcatされた。
